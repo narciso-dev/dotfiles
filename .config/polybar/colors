@@ -1,0 +1,22 @@
+# Set colors from .Xresources and use custom color scheme as a fallback
+
+# N800
+background     = #172B4D
+# B400
+background-alt = #0052CC
+# N0
+foreground     = #FFFFFF
+# B400
+primary        = #0052CC
+# B300
+secondary      = #0065FF
+# R500
+urgent         = #BF2600
+# B300
+linecolor      = #0052CC
+# N700 
+bordercolor    = #091E42
+# B300
+overline       = #2684FF
+# B200
+underline      = #0052CC

@@ -1,0 +1,78 @@
+configuration {
+    show-icons:                     false;
+    font:                           "Fira Code 20";
+}
+
+* {
+    background-color:               transparent;
+
+    background:                     #172B4D;
+    background-alt:                 #0052CC;
+    text-color:                     #B3BAC5;
+    text-color-selected:            #FFFFFF;
+    foreground:                     #FFFFFF;
+    border-color:                   #0052CC;
+    primary:                        #0052CC;
+    urgent:                         #BF2600;
+}
+
+window {
+    height:                         80%;
+    width:                          80%;
+    transparency:                   "real";
+    background-color:               @background;
+    border-radius:                  8px;
+    
+}
+
+mainbox {
+    children:                       [ entry, listview, message ];
+    border:                         1px;
+    border-radius:                  8px;
+}
+
+entry {
+    color:                          @text-color-selected;
+    expand:                         false;
+    margin:                         16px;
+    background-color:               @background-alt;
+    padding:                        8px;
+    border:                         8px;
+    border-color:                   @background-alt;
+    border-radius:                  8px;
+}
+
+element {
+    padding:                        8px 24px;
+    orientation:                    horizontal;
+}
+
+element normal.urgent, element alternate.urgent {
+    background-color:               @urgent;
+}
+
+element normal.active, element alternate.active {
+    background-color:               transparent;
+    color:                          @text-color;
+}
+
+element selected {
+    background-color:               @background-alt;
+    color:                          @text-color-selected;
+}
+
+element selected.urgent {
+    background-color:               @urgent;
+}
+
+element selected.active {
+    background-color:               @background-alt;
+}
+
+element-icon {
+    border:                         1px;
+    border-color:                   @border-color;
+    border-radius:                  8;
+    padding:                        32px;
+   background: red;
+}
